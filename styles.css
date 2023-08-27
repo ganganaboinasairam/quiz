@@ -1,0 +1,150 @@
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.opening-page button:hover,
+.category-btn:hover,
+.next-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Add box shadow to question container */
+.question-container {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+/* Typography adjustments */
+.quiz-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.question-text {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.options-list .option {
+  font-size: 18px;
+  padding: 12px 18px;
+}
+
+/* Add transitions */
+.opening-page,
+.category-selection,
+.quiz-page,
+.result-page {
+  transition: opacity 0.3s ease-in-out;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.category-selection,
+.quiz-page,
+.result-page {
+  display: none;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.opening-page button,
+.category-btn,
+.next-btn,
+.home-btn {
+  background-color: #f014c1;
+  color: #0f0c0c;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.opening-page button:hover,
+.category-btn:hover,
+.next-btn:hover,
+.home-btn:hover {
+  background-color: hsla(307, 96%, 73%, 0.941);
+}
+
+.options-list .option {
+  margin: 10px 0;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.options-list .option:hover {
+  background-color: #f0f0f0;
+}
+
+.timer {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.result-page {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.result-page h1 {
+  margin-bottom: 20px;
+}
+
+.winner {
+  background-color: #4caf50;
+  color: #ffffff;
+}
+
+.loser {
+  background-color: #f44336;
+  color: #ffffff;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+  .quiz-title {
+    font-size: 24px;
+  }
+
+  .question-text {
+    font-size: 18px;
+  }
+
+  .options-list .option {
+    font-size: 14px;
+  }
+
+  .timer {
+    font-size: 16px;
+  }
+
+  .result-page {
+    padding: 15px;
+    margin-top: 15px;
+  }
+}
