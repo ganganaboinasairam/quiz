@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="opening-page">
+    <h1>
+      <center>
+        <font face="algerian" color="black" size="20">Welcome to the Quiz App....</font>
+      </center>
+    </h1>
+    <center><button class="start-quiz-btn">Start Quiz</button></center>
+  </div>
+
+  <div class="category-selection">
+    <h1>
+      <font face="bold" size="10" color="blue">Select a Category</font>
+    </h1>
+    <button class="category-btn" data-category="general">General Knowledge</button>
+    <button class="category-btn" data-category="science">Science</button>
+    <button class="category-btn" data-category="maths">Mathematics</button>
+  </div>
+
+  <div class="quiz-page">
+    <h1 class="quiz-title"></h1>
+    <div class="question-container">
+      <p class="question-text"></p>
+      <ul class="options-list"></ul>
+    </div>
+    <div class="timer">Time: <span class="time-remaining">10</span> seconds</div>
+  </div>
+
+  <div class="result-page winner">
+    <h1>Congratulations! You are a Winner!</h1>
+    <p>Your Score: <span class="score"></span></p>
+    <!-- <button class="home-btn" onclick="homeBtn()">Home</button> -->
+  </div>
+  <div class="result-page loser">
+    <h1>Sorry! You are a Loser!</h1>
+    <p>Your Score: <span class="score"></span></p>
+    <!-- <button class="home-btn" onclick="homeBtn()">Home</button> -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
